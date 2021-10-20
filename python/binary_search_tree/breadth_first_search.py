@@ -1,5 +1,3 @@
-import sys
-
 class Node:
     def __init__(self,data):
         self.right=self.left=None
@@ -29,8 +27,6 @@ class Solution:
                 queue.append(node.left)
             if node.right is not None:
                 queue.append(node.right)
-
-
 
 T=int(input("Number of elements in tree: "))
 myTree=Solution()
